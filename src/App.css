@@ -1,0 +1,17 @@
+/* Base App styles - Minimal as most styles are in components or index.css */
+#root {
+  width: 100%;
+  padding: 0;
+  margin: 0;
+}
+
+.intranet-page {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1;
+  padding-bottom: 40px;
+}
