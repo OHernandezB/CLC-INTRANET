@@ -1,6 +1,6 @@
 import React from 'react';
-import beneficiosImg from '../IMG/beneficios-colaboradores.jpg';
-import busStopImg from '../IMG/bus-stop.jpg';
+import beneficiosImg from '../assets/beneficios-colaboradores.jpg';
+import busStopImg from '../assets/bus-stop.jpg';
 const NewsSection = () => {
   const news = [
     {

@@ -1,12 +1,12 @@
 import React, { useState } from 'react';
-import Header from './Header';
-import QuickLinks from './QuickLinks';
-import HeroBanner from './BannerPrincipal';
-import NewsSection from './NewsSection';
-import AlertsSection from './AlertsSection';
-import Footer from './Footer';
+import Header from '../components/Header';
+import QuickLinks from '../components/QuickLinks';
+import HeroBanner from '../components/BannerPrincipal';
+import NewsSection from '../components/NewsSection';
+import AlertsSection from '../components/AlertsSection';
+import Footer from '../components/Footer';
 import '../index.css';
-import Sidebar from './Sidebar';
+import Sidebar from '../components/Sidebar';
 
 const IntranetPage = ({ onNavigate }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);

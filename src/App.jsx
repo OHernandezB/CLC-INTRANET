@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import IntranetPage from './components/IntranetPage';
-import PrivateAccessPage from './components/PrivateAccessPage';
+import IntranetPage from './pages/IntranetPage';
+import PrivateAccessPage from './pages/PrivateAccessPage';
 import './App.css';
 
 function App() {

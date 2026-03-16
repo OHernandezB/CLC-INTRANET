@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
-import Sidebar from './Sidebar';
-import headerImg from '../IMG/imagen-general-edificio-clc.jpg';
+import Sidebar from '../components/Sidebar';
+import headerImg from '../assets/imagen-general-edificio-clc.jpg';
 
 const PrivateAccessPage = ({ onBack }) => {
   const [sidebarCollapsed, setSidebarCollapsed] = useState(true);

@@ -144,3 +144,69 @@ main.transition-all {
   transform: translateY(-8px);
   box-shadow: 0 10px 25px rgba(0,0,0,0.1) !important;
 }
+/* Search Bubble Styles */
+.search-wrapper {
+  margin-left: 20px;
+}
+
+.search-bubble {
+  position: relative;
+  display: flex;
+  align-items: center;
+  background: #f0f4ff;
+  border-radius: 50px;
+  width: 55px;
+  height: 55px;
+  transition: all 0.5s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  margin-left: auto; /* Push to the right if needed */
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 51, 153, 0.1);
+  border: 2px solid transparent;
+}
+
+.search-bubble.active {
+  width: 450px; /* Slightly smaller to fit with center title */
+  background: white;
+  border-color: var(--clinic-navy);
+  box-shadow: 0 10px 30px rgba(0, 51, 153, 0.2);
+}
+
+.search-icon-circle {
+  min-width: 55px;
+  height: 55px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: var(--clinic-navy);
+  transition: all 0.3s ease;
+}
+
+.search-bubble.active .search-icon-circle {
+  color: var(--clinic-navy);
+  transform: rotate(90deg);
+}
+
+.search-input {
+  width: 100%;
+  border: none;
+  background: transparent;
+  padding: 10px 20px 10px 5px;
+  font-size: 18px;
+  color: var(--clinic-navy);
+  outline: none;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+  pointer-events: none;
+}
+
+.search-bubble.active .search-input {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.login-btn:hover {
+  filter: brightness(1.1);
+  transform: scale(1.05);
+  box-shadow: 0 8px 20px rgba(165, 197, 54, 0.3) !important;
+}
